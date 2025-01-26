@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="icon48.png">
+  <title>Acceso bloqueado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      color: red;
+      font-size: 3vw; /* Escala con el tamaño del viewport */
+    }
+
+    p {
+      font-size: 1.5vw; /* Escala automáticamente */
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1.5vw; /* Escala según el zoom */
+      color: white;
+      background-color: #0077b5;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #005580;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 2%;
+      width: 96%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.2vw; /* Tamaño relativo */
+    }
+
+    .linkedin {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #0077b5;
+      font-weight: bold;
+    }
+
+    .linkedin img {
+      width: 2vw; /* Tamaño del ícono relativo */
+      height: auto;
+      margin-right: 8px;
+    }
+
+    .name {
+      font-size: 0.8vw;
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Acceso bloqueado!</h1>
+  <p>Esta URL ha sido marcada como maliciosa y se ha bloqueado por seguridad.</p>
+  <div id="button-container">
+    <button id="backButton">Volver a Google</button>
+  </div>
+  <script src="blocked.js"></script>
+  <footer>
+    <div class="name">Desarrollado por Iván Peláez Sanz</div>
+    <a class="linkedin" href="https://www.linkedin.com/in/ivan-pelaez-sanz/" target="_blank">
+      <img src="linkedin.png" alt="LinkedIn">
+    </a>
+  </footer>
+</body>
+</html>
